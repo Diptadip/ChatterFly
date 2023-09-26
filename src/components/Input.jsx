@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
-import Img from "../assets/img.png";
-import Attach from "../assets/attach.png";
+import {IoSend} from 'react-icons/io5'
+import {BsFillCameraFill} from 'react-icons/bs'
+import {IoAttachOutline} from 'react-icons/io5'
 import { AuthContext } from "../context/AuthContext";
 import { ChatContext } from "../context/ChatContext";
 import {
@@ -82,7 +83,10 @@ const Input = () => {
         value={text}
       />
       <div className="send">
-        <img src={Attach} alt="" />
+        <label>
+        <IoAttachOutline className="fileIcon"/>
+        </label>
+        
         <input
           type="file"
           style={{ display: "none" }}
@@ -90,9 +94,9 @@ const Input = () => {
           onChange={(e) => setImg(e.target.files[0])}
         />
         <label htmlFor="file">
-          <img src={Img} alt="" />
+          <BsFillCameraFill className="fileIcon"/>
         </label>
-        <button onClick={handleSend}>Send</button>
+        <button onClick={handleSend}><IoSend className="fileIcon"/></button>
       </div>
     </div>
   );

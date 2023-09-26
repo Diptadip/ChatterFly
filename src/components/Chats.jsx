@@ -30,6 +30,7 @@ const Chats = () => {
 
   return (
     <div className="chats">
+      <span className="chatsText">Your Chats</span>
       {Object.entries(chats)?.sort((a,b)=>b[1].date - a[1].date).map((chat) => (
         <div
           className="userChat"

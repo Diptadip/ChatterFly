@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
+import {PiButterflyDuotone} from 'react-icons/pi'
 
 const Login = () => {
   const [err, setErr] = useState(false);
@@ -22,15 +23,18 @@ const Login = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Lama Chat</span>
+        <span className="logo">
+            ChatterFly
+            <PiButterflyDuotone className="logoIcon"/>
+        </span>
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
-          <input type="email" placeholder="email" />
-          <input type="password" placeholder="password" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
           <button>Sign in</button>
           {err && <span>Something went wrong</span>}
         </form>
-        <p>You don't have an account? <Link to="/register">Register</Link></p>
+        <p>You don't have an account? <Link className="link" to="/register">Register</Link></p>
       </div>
     </div>
   );

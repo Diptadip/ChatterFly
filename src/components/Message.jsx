@@ -26,7 +26,8 @@ const Message = ({ message }) => {
           }
           alt=""
         />
-        <span>just now</span>
+        <span>just now
+        {console.log(message.date.seconds)}</span>
       </div>
       <div className="messageContent">
         <p>{message.text}</p>
