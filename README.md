@@ -9,9 +9,9 @@ A Messaging Service App made in **React** that allows users a **realtime** text 
 
 # Author Info
 
-**Author**: Diptadip Mallik.
-**University**: Indian Institute of Technology (IIT), Patna.
-**Department**: Chemical and Biochemical Engineering.
+**Author**: Diptadip Mallik.\
+**University**: Indian Institute of Technology (IIT), Patna.\
+**Department**: Chemical and Biochemical Engineering.\
 **Roll No**: 2101CB25.
 
 ##  Steps to Run the App
