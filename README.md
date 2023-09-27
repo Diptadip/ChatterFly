@@ -5,7 +5,7 @@
 
 
 
-A Messaging Service App made in **React** that allows users a **realtime** text chat experience. Users are required to Signup/Signin using their **email** and **password**. The app provides and **simple, easy to use UI**. The databse and authentication is handled in **Firebase**.
+A Messaging Service App made in **React** that allows users a **realtime** text chat experience. Users are required to Signup/Signin using their **email** and **password**. The app provides and **simple, easy-to-use UI**. The database and authentication are handled in **Firebase**.
 
 # Author Info
 
@@ -16,15 +16,15 @@ A Messaging Service App made in **React** that allows users a **realtime** text 
 
 ##  Steps to Run the App
 
-### Clone the repoistory
-Download the Repository as a zip file and extract it or open your terminal and type:
+### Clone the repository
+Download the Repository as a zip file and extract it, or open your terminal and type:
 
     $ git clone https://github.com/Diptadip/ChatterFly
 
 ### Firebase configurations
-Visit [Firebase console](https://console.firebase.google.com/) , Sign in with your google account and create a new Project. Follow the steps [here](https://firebase.google.com/docs/web/setup) to get the firebase configuration. Copy the and save the firebaseConfig object. Also create a new firestore database.
+Visit [Firebase console](https://console.firebase.google.com/), Sign in with your Google account and create a new Project. To get the Firebase configuration, follow the steps [here](https://firebase.google.com/docs/web/setup). Copy the and save the firebaseConfig object. Also, create a new Firestore database.
 
-### Set-up environment variables.
+### Set up environment variables.
 
 cd into the directory. Create a **env.js** file in the **src** folder. Paste the copied firebaseConfig object. It should like the following.
 
@@ -39,7 +39,7 @@ cd into the directory. Create a **env.js** file in the **src** folder. Paste the
 	export { firebaseConfig };
 
 ### Install node modules
-Open the terminal, cd into the root folder, run the following command.
+Open the terminal, cd into the root folder, and run the following command.
 
     npm install
 This will install all the required dependencies.
@@ -59,10 +59,10 @@ You may also see any lint errors in the console.
 ## Features of the App
 
  - Simple, Easy to use UI.
- - Hassle free authentication using email and password.
- - Lets user upload a display image or avatar.
- - Provides realtime text chat with other users.
- - Users can search other available users.
+ - Hassle-free authentication using email and password.
+ - Lets the user upload a display image or avatar.
+ - Provides real-time text chat with other users.
+ - Users can search for other available users.
  - Allows sending images.
 
 ## TODO
