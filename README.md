@@ -1,12 +1,54 @@
-# Getting Started with Create React App
+# ChatterFly
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![builtwithlove](https://forthebadge.com/images/badges/built-with-love.svg)
+ ![react](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black) ![node](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) ![firebase](https://img.shields.io/badge/Firebase-FFCA28.svg?style=for-the-badge&logo=Firebase&logoColor=black)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+A Messaging Service App made in **React** that allows users a **realtime** text chat experience. Users are required to Signup/Signin using their **email** and **password**. The app provides and **simple, easy to use UI**. The databse and authentication is handled in **Firebase**.
+
+# Author Info
+
+**Author**: Diptadip Mallik.
+**University**: Indian Institute of Technology (IIT), Patna.
+**Department**: Chemical and Biochemical Engineering.
+**Roll No**: 2101CB25.
+
+##  Steps to Run the App
+
+### Clone the repoistory
+Download the Repository as a zip file and extract it or open your terminal and type:
+
+    $ git clone https://github.com/Diptadip/ChatterFly
+
+### Firebase configurations
+Visit [Firebase console](https://console.firebase.google.com/) , Sign in with your google account and create a new Project. Follow the steps [here](https://firebase.google.com/docs/web/setup) to get the firebase configuration. Copy the and save the firebaseConfig object. Also create a new firestore database.
+
+### Set-up environment variables.
+
+cd into the directory. Create a **env.js** file in the **src** folder. Paste the copied firebaseConfig object. It should like the following.
+
+    const  firebaseConfig  = {
+	    apiKey:  "Your api key",
+	    authDomain:  "your auth domain",
+	    projectId:  "your projectId",
+	    storageBucket:  "your storage bucket url",
+	    messagingSenderId:  "your messaging sender Id",
+	    appId:  "Your app Id"
+	   };
+	export { firebaseConfig };
+
+### Install node modules
+Open the terminal, cd into the root folder, run the following command.
+
+    npm install
+This will install all the required dependencies.
+
+### Start the App
+
+In the terminal, run the following command.
+
+    npm start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -14,57 +56,31 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## Features of the App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ - Simple, Easy to use UI.
+ - Hassle free authentication using email and password.
+ - Lets user upload a display image or avatar.
+ - Provides realtime text chat with other users.
+ - Users can search other available users.
+ - Allows sending images.
 
-### `npm run build`
+## TODO
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ 1. [ ] Group chat feature.
+ 2. [ ] Option to attach file of any format.
+ 3. [ ] Voice and video calls.
+ 4. [ ] AI chatbot integration.
+ 5. [ ] Option to Update profile.
+ 6. [ ] Availability status.
+ 7. [ ] Message forwarding and deletion.
+ 8. [ ] Privacy features.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ - React for frontend.
+ - Sass for stylesheet.
+ - Firebase for authetication and database handling.
+ - Firestore for storing images. 
+ - Follows Atomic design.
+ - Uses reusable react Components.
