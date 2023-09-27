@@ -9,6 +9,7 @@ import { AuthContext } from "./context/AuthContext";
 function App() {
   const { currentUser } = useContext(AuthContext);
 
+  //Not logged in
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {
       return <Navigate to="/login" />;

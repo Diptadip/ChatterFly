@@ -14,7 +14,7 @@ const Login = () => {
     const password = e.target[1].value;
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(auth, email, password);//firebase auth
       navigate("/")
     } catch (err) {
       setErr(true);

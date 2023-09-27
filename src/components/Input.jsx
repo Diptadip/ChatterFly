@@ -28,6 +28,7 @@ const Input = () => {
 
       const uploadTask = uploadBytesResumable(storageRef, img);
 
+      //uploading image to storage
       uploadTask.on(
         (error) => {
           //TODO:Handle Error
@@ -57,6 +58,8 @@ const Input = () => {
       });
     }
 
+
+    //updating last message and date in userChats for current user
     await updateDoc(doc(db, "userChats", currentUser.uid), {
       [data.chatId + ".lastMessage"]: {
         text,
@@ -64,6 +67,7 @@ const Input = () => {
       [data.chatId + ".date"]: serverTimestamp(),
     });
 
+    //updating last message and date in userChats for other user
     await updateDoc(doc(db, "userChats", data.user.uid), {
       [data.chatId + ".lastMessage"]: {
         text,

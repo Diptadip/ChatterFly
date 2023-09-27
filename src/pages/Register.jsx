@@ -22,7 +22,7 @@ const Register = () => {
 
     try {
       //Create user
-      const res = await createUserWithEmailAndPassword(auth, email, password);
+      const res = await createUserWithEmailAndPassword(auth, email, password);//firebase auth
 
       //Create a unique image name
       const date = new Date().getTime();
@@ -36,15 +36,16 @@ const Register = () => {
               displayName,
               photoURL: downloadURL,
             });
-            //create user on firestore
+            //creating  users db on firestore - to store users
             await setDoc(doc(db, "users", res.user.uid), {
               uid: res.user.uid,
               displayName,
               email,
               photoURL: downloadURL,
             });
+            console.log("User created successfully");
 
-            //create empty user chats on firestore
+            //creating userChats db on firestore - to store chats
             await setDoc(doc(db, "userChats", res.user.uid), {});
             navigate("/");
           } catch (err) {

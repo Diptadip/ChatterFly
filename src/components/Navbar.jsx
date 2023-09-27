@@ -5,7 +5,7 @@ import { AuthContext } from '../context/AuthContext'
 import {PiButterflyDuotone} from 'react-icons/pi'
 
 const Navbar = () => {
-  const {currentUser} = useContext(AuthContext)
+  const {currentUser} = useContext(AuthContext) //fetching the current user from AuthContext
 
   return (
     <div className='navbar'>

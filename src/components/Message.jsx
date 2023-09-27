@@ -15,6 +15,7 @@ const Message = ({ message }) => {
   return (
     <div
       ref={ref}
+      //Different styling for owner and other users
       className={`message ${message.senderId === currentUser.uid && "owner"}`}
     >
       <div className="messageInfo">
@@ -26,8 +27,7 @@ const Message = ({ message }) => {
           }
           alt=""
         />
-        <span>just now
-        {console.log(message.date.seconds)}</span>
+        <span>just now</span>
       </div>
       <div className="messageContent">
         <p>{message.text}</p>

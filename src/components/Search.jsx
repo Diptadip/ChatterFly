@@ -12,6 +12,7 @@ import {
 } from "firebase/firestore";
 import { db } from "../firebase";
 import { AuthContext } from "../context/AuthContext";
+
 const Search = () => {
   const [username, setUsername] = useState("");
   const [user, setUser] = useState(null);
@@ -25,6 +26,7 @@ const Search = () => {
       where("displayName", "==", username)
     );
 
+    //fetching the user from firestore
     try {
       const querySnapshot = await getDocs(q);
       querySnapshot.forEach((doc) => {
@@ -40,7 +42,7 @@ const Search = () => {
   };
 
   const handleSelect = async () => {
-    //check whether the group(chats in firestore) exists, if not create
+    //checking if chat already exists, if not create a new one
     const combinedId =
       currentUser.uid > user.uid
         ? currentUser.uid + user.uid
@@ -62,6 +64,7 @@ const Search = () => {
           [combinedId + ".date"]: serverTimestamp(),
         });
 
+        //create other user's chats
         await updateDoc(doc(db, "userChats", user.uid), {
           [combinedId + ".userInfo"]: {
             uid: currentUser.uid,

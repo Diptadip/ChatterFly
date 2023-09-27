@@ -13,6 +13,7 @@ const Chat = () => {
     <div className="chat">
       <div className="chatInfo">
         <span>{data.user?.displayName}</span>
+        <span>{data.user.displayName?"Online":""}</span>
         <div className="chatIcons">
         <BsFillCameraVideoFill/>
         <IoPersonAddSharp/>
