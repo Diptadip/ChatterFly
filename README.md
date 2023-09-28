@@ -14,7 +14,7 @@ A Messaging Service App made in **React** that allows users a **realtime** text 
 **Author**: Diptadip Mallik.\
 **University**: Indian Institute of Technology (IIT), Patna.\
 **Department**: Chemical and Biochemical Engineering.\
-**Roll No**: 2101CB25.
+**Roll No**: 2101CB25.\
 **Institute Mail-ID**: diptadip_2101cb25@iitp.ac.in\
 **Personal Mail-ID**:  diptadip2105@gmail.com
 
