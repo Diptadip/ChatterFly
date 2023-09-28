@@ -5,7 +5,7 @@
 
 
 
-A Messaging Service App made in **React** that allows users a **realtime** text chat experience. Users are required to Signup/Signin using their **email** and **password**. The app provides and **simple, easy-to-use UI**. The database and authentication are handled in **Firebase**./
+A Messaging Service App made in **React** that allows users a **realtime** text chat experience. Users are required to Signup/Signin using their **email** and **password**. The app provides and **simple, easy-to-use UI**. The database and authentication are handled in **Firebase**.
 
 ### **System Design Document** : [View Document](https://drive.google.com/file/d/1Fe3J9cS1DzbEECd3amV9ITCfHFIkJPXz/view?usp=sharing)
 
