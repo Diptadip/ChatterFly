@@ -5,7 +5,9 @@
 
 
 
-A Messaging Service App made in **React** that allows users a **realtime** text chat experience. Users are required to Signup/Signin using their **email** and **password**. The app provides and **simple, easy-to-use UI**. The database and authentication are handled in **Firebase**.
+A Messaging Service App made in **React** that allows users a **realtime** text chat experience. Users are required to Signup/Signin using their **email** and **password**. The app provides and **simple, easy-to-use UI**. The database and authentication are handled in **Firebase**./
+
+### **System Design Document** : [View Document](https://drive.google.com/file/d/1Fe3J9cS1DzbEECd3amV9ITCfHFIkJPXz/view?usp=sharing)
 
 # Author Info
 
@@ -13,6 +15,9 @@ A Messaging Service App made in **React** that allows users a **realtime** text 
 **University**: Indian Institute of Technology (IIT), Patna.\
 **Department**: Chemical and Biochemical Engineering.\
 **Roll No**: 2101CB25.
+**Institute Mail-ID**: diptadip_2101cb25@iitp.ac.in\
+**Personal Mail-ID**:  diptadip2105@gmail.com
+
 
 ##  Steps to Run the App
 
